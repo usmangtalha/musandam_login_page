@@ -1,9 +1,12 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'textfield.dart';
+import 'package:musandam_1/firebase_options.dart';
 import 'texts.dart';
 import 'buttons.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const LoginPage());
 }
 
@@ -30,7 +33,6 @@ class _LoginContentState extends State<LoginContent> {
   final formKey = GlobalKey<FormState>();
 
   TextEditingController emailController = TextEditingController();
-
   TextEditingController passwordController = TextEditingController();
 
   void printValue() {
@@ -63,15 +65,22 @@ class _LoginContentState extends State<LoginContent> {
               SingleChildScrollView(
                 child: Center(
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 50, horizontal: 45),
+                    padding: const EdgeInsets.symmetric(
+                      vertical: 50,
+                      horizontal: 45,
+                    ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         TopItems(),
-                        EmailBox(controller: emailController,),
+                        EmailBox(
+                          controller: emailController,
+                        ),
                         PasswordBox(controller: passwordController),
                         ForgotPasswordBtn(),
-                        LoginBtn(setstate: printValue,),
+                        LoginBtn(
+                          setstate: printValue,
+                        ),
                         GoogleBtn(),
                         BottomRow(),
                       ],

@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "489550133772",
+    "project_id": "musandam-login-authentication",
+    "storage_bucket": "musandam-login-authentication.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489550133772:android:2e11e54263e5e7da494c29",
+        "android_client_info": {
+          "package_name": "com.example.musandam_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "489550133772-4bhov8hl52iboid2jfldbdpcrjt08n21.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.musandam_1",
+            "certificate_hash": "783e879ad7c13be735f85929676c1ed23ed8c9d1"
+          }
+        },
+        {
+          "client_id": "489550133772-9sp24dqf9vf0nrcgk9661q6jqom9v73d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7L5CbCTJKgmeMwQYTJiJMcAsWsd1Za2o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "489550133772-9sp24dqf9vf0nrcgk9661q6jqom9v73d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "489550133772-ndnipjk8rnljcpgobe5d9dk2vc2f81lp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.musandam1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
