@@ -45,7 +45,7 @@ class _LoginContentState extends State<LoginContent> {
 
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text('Email : $email \n Password: $password'),
+          content: Text('Email : $email\nPassword: $password'),
         ),
       );
     }
@@ -78,8 +78,9 @@ class _LoginContentState extends State<LoginContent> {
                         ),
                         PasswordBox(controller: passwordController),
                         ForgotPasswordBtn(),
-                        LoginBtn(
-                          setstate: printValue,
+                        LogBtn(
+                          setState: printValue,
+                          textLog: 'LogIn',
                         ),
                         GoogleBtn(),
                         BottomRow(),
